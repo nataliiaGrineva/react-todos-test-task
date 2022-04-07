@@ -92,7 +92,7 @@ const TodosList = () => {
                 padding: '15px'
               }}>
               <TextField value={isOpenEditDialog.item.title} onChange={handleEditTodo} />
-              <Button color="success" variant="contained" onClick={handleSaveEditedTodo}>
+              <Button color='success' variant='contained' onClick={handleSaveEditedTodo}>
                 save
               </Button>
             </Box>
@@ -116,7 +116,7 @@ const TodosList = () => {
                 />
               );
             })}
-          {filteredTodos.length === 0 && <Typography variant="h3">No Todos</Typography>}
+          {filteredTodos.length === 0 && <Typography variant='h3'>No Todos</Typography>}
         </List>
       </ThemeProvider>
     </Paper>

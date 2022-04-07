@@ -19,7 +19,7 @@ const TodosFilters = () => {
         <Button
           key={item}
           name={item}
-          variant="outlined"
+          variant='outlined'
           color={item !== filter ? 'primary' : 'success'}
           onClick={handleFilter}>
           {item}

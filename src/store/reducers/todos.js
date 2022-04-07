@@ -16,7 +16,7 @@ const todos = (state = initialState, action) => {
   const { type, payload } = action;
   switch (type) {
     case ADD_TODO: {
-      const newTodos = [...state.todos, payload];
+      const newTodos = [payload, ...state.todos];
       localStorage.setItem('TODOS', JSON.stringify(newTodos));
       return {
         ...state,

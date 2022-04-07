@@ -19,7 +19,7 @@ function TodosScreen() {
           alignItems: 'center',
           justifyContent: 'space-evenly'
         }}>
-        <Button variant="contained" color="primary" onClick={handleBack}>
+        <Button variant='contained' color='primary' onClick={handleBack}>
           Back
         </Button>
         <h1>Todos</h1>

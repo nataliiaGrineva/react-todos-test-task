@@ -8,10 +8,10 @@ function MainRouter() {
   return (
     <HashRouter>
       <Routes>
-        <Route path="/" element={<HomeScreen />} />
-        <Route path="todos/:todoId" element={<TodoScreen />} />
-        <Route path="todos" element={<TodosScreen />} />
-        <Route path="photos" element={<PhotosScreen />} />
+        <Route path='/' element={<HomeScreen />} />
+        <Route path='todos/:todoId' element={<TodoScreen />} />
+        <Route path='todos' element={<TodosScreen />} />
+        <Route path='photos' element={<PhotosScreen />} />
       </Routes>
     </HashRouter>
   );

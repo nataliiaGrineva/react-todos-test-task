@@ -29,11 +29,11 @@ const CreateTodo = () => {
         flexDirection: 'row',
         alignItems: 'center'
       }}>
-      <TextField label="Enter title" multiline maxRows={4} value={title} onChange={handleChange} />
+      <TextField label='Enter title' multiline maxRows={4} value={title} onChange={handleChange} />
       <Button
-        size="large"
-        variant="contained"
-        color="primary"
+        size='large'
+        variant='contained'
+        color='primary'
         onClick={handleCreateTodo}
         disabled={!title}>
         add todo

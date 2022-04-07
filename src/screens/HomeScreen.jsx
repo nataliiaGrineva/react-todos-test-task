@@ -6,10 +6,10 @@ function HomeScreen() {
     <Container>
       <h1 style={{ textAlign: 'center' }}>Home</h1>
       <Box sx={{ display: 'flex', margin: '0 auto', width: 300, justifyContent: 'space-between' }}>
-        <Button component={Link} color="primary" variant="contained" to="todos">
+        <Button size='large' component={Link} color='primary' variant='contained' to='todos'>
           Todos
         </Button>
-        <Button component={Link} color="primary" variant="contained" to="photos">
+        <Button size='large' component={Link} color='primary' variant='contained' to='photos'>
           Photos
         </Button>
       </Box>

@@ -21,32 +21,32 @@ function TodoScreen() {
         justifyContent: 'center',
         height: '100vh'
       }}>
-      <Card variant="outlined" sx={{ minWidth: 345 }}>
+      <Card variant='outlined' sx={{ minWidth: 345 }}>
         <>
           <CardContent>
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
               Title
             </Typography>
-            <Typography variant="h5" component="div">
+            <Typography variant='h5' component='div'>
               {todo.title}
             </Typography>
 
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
               Todo status
             </Typography>
-            <Typography variant="h5" component="div">
+            <Typography variant='h5' component='div'>
               {todo.checked ? 'done' : 'todo'}
             </Typography>
 
-            <Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+            <Typography sx={{ fontSize: 14 }} color='text.secondary' gutterBottom>
               Created at
             </Typography>
-            <Typography variant="h5" component="div">
+            <Typography variant='h5' component='div'>
               {todo.createdAt.toString().slice(0, 10)}
             </Typography>
           </CardContent>
           <CardActions>
-            <Button size="small" onClick={handleBack}>
+            <Button size='small' onClick={handleBack}>
               Back
             </Button>
           </CardActions>

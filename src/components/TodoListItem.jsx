@@ -22,10 +22,10 @@ const TodoListItem = ({
     key={todo.id}
     secondaryAction={
       <>
-        <IconButton edge="end" aria-label="edit" onClick={() => handleOpenEdit(todo)}>
+        <IconButton edge='end' aria-label='edit' onClick={() => handleOpenEdit(todo)}>
           <BorderColorIcon />
         </IconButton>
-        <IconButton edge="end" aria-label="delete" onClick={() => handleDeleteTodo(todo.id)}>
+        <IconButton edge='end' aria-label='delete' onClick={() => handleDeleteTodo(todo.id)}>
           <DeleteForeverIcon />
         </IconButton>
       </>
@@ -35,7 +35,7 @@ const TodoListItem = ({
     <ListItemButton role={undefined} onClick={() => handleTodo(todo.id)} dense>
       <ListItemIcon>
         <Checkbox
-          edge="start"
+          edge='start'
           checked={todo.checked}
           tabIndex={-1}
           disableRipple
