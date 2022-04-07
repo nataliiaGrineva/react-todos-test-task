@@ -20,6 +20,14 @@ CRUD todo
  -  clicking on each image opens a modal with a high resolution image;
  -  app deployed to gh-pages;
  [demo link](https://nataliiagrineva.github.io/react-todos-test-task/)
+# Technologies
+ - react;
+ - redux, redux-thunk;
+ - react-router v6;
+ - axios;
+ - mui;
+ - eslint, prettier;
+
  # Problems
  - jsonplaceholder.typicode.com not working properly on gh-pages via CORS error, works on localhost (not always online);
  ![Screenshot](./images/img1.png)
