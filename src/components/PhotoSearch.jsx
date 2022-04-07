@@ -13,7 +13,7 @@ const PhotoSearch = () => {
 
   const handleChange = (e) => {
     const { value } = e.target;
-    let newValue = value.replace(/[^0-9]/g, '');
+    let newValue = value.replace(/[^0-9]/g, '').replace(/^0+/g, '');
     if (+newValue > 100) {
       newValue = 100;
     }

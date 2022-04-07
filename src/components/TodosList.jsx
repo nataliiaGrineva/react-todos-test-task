@@ -92,7 +92,11 @@ const TodosList = () => {
                 padding: '15px'
               }}>
               <TextField value={isOpenEditDialog.item.title} onChange={handleEditTodo} />
-              <Button color='success' variant='contained' onClick={handleSaveEditedTodo}>
+              <Button
+                color='success'
+                variant='contained'
+                disabled={!isOpenEditDialog.item.title}
+                onClick={handleSaveEditedTodo}>
                 save
               </Button>
             </Box>
