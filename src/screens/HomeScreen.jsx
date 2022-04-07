@@ -1,23 +1,19 @@
-import { Button } from '@mui/material';
+import { Button, Container, Box } from '@mui/material';
 import { Link } from 'react-router-dom';
 
 function HomeScreen() {
   return (
-    <div className="App">
-      <h1>Home</h1>
-      <Button component={Link} color="primary" variant="contained" to="todos">
-        Todos
-      </Button>
-      <Button component={Link} color="primary" variant="contained" to="photos">
-        Photos
-      </Button>
-      <Button component={Link} color="primary" variant="contained" to="/todos/11">
-        Todo
-      </Button>
-      <Button component={Link} color="primary" variant="contained" to="/">
-        Home
-      </Button>
-    </div>
+    <Container>
+      <h1 style={{ textAlign: 'center' }}>Home</h1>
+      <Box sx={{ display: 'flex', margin: '0 auto', width: 300, justifyContent: 'space-between' }}>
+        <Button component={Link} color="primary" variant="contained" to="todos">
+          Todos
+        </Button>
+        <Button component={Link} color="primary" variant="contained" to="photos">
+          Photos
+        </Button>
+      </Box>
+    </Container>
   );
 }
 

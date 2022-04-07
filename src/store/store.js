@@ -1,21 +1,11 @@
 import thunk from 'redux-thunk';
-import { createStore, applyMiddleware } from 'redux';
+import { createStore, applyMiddleware, combineReducers } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
-import { ADD, SUBTRACT } from './types';
+import todos from './reducers/todos';
+import photos from './reducers/photos';
 
-const initialState = { count: 0, msg: 'hello' };
+const rootReducer = combineReducers({ todos, photos });
 
-const rootReducer = (state = initialState, action) => {
-  switch (action.type) {
-    case ADD:
-      return { ...state, count: state.count + 1 };
-    case SUBTRACT:
-      return { ...state, count: state.count - 1 };
-    default:
-      return { ...state };
-  }
-};
-
-const store = createStore(rootReducer, initialState, composeWithDevTools(applyMiddleware(thunk)));
+const store = createStore(rootReducer, composeWithDevTools(applyMiddleware(thunk)));
 
 export default store;
